@@ -4,7 +4,7 @@ This exercsie will allow you to explore language modelling. We focus on the key 
 Navigate to the `src/attention_model.py`-file and implement multi-head attention [1]
 
 ``` math
-\text{Attention}(\mathbf{Q},\mathbf{K},\mathbf{V}) = \text{softmax}(\frac{\mathbf{Q}\mathbf{K}^T}{\sqrt{d_k}})\mathbf{V}
+\text{Attention}(\mathbf{Q},\mathbf{K},\mathbf{V}) = \text{softmax}\left(\frac{\mathbf{Q}\mathbf{K}^T}{\sqrt{d_k}}\right)\mathbf{V}
 ```
 
 To make attention useful in a language modelling scenario we cannot use future information. A model without access to upcoming future inputs or words is known as causal.
